@@ -24,7 +24,7 @@
 <p class="updated"><strong>Last Updated:</strong> November 2, 2026</p>
 
 <div class="card">
-<p><strong>The short version:</strong> CVisto does not require an account. Your resumes, cover letters, photos and personal details are stored on your device. Your resume text leaves your device only when you use an AI writing feature, and only after you have given explicit permission. We do not sell your data, we do not show ads, and we do not track you across other apps or websites.</p>
+<p><strong>The short version:</strong> CVisto does not require an account. Your resumes, cover letters, photos and personal details are stored on your device. Your resume text leaves your device only when you use an AI writing feature, and only after you have given explicit permission. We use anonymous usage statistics (which you can turn off) to improve the App. We do not sell your data, we do not show ads, and we do not track you across other apps or websites.</p>
 </div>
 
 <p>This Privacy Policy explains what information CVisto ("the App", "we", "us") handles, how it is used, who it is shared with, how long it is kept, and how you can control or delete it. CVisto is developed and operated by Tuğberk Tabak, an independent developer based in Türkiye, who is the data controller for the processing described here.</p>
@@ -75,6 +75,11 @@
     <td>Supabase</td>
   </tr>
   <tr>
+    <td><strong>Anonymous usage statistics:</strong> app events (for example app opened, screen viewed, resume exported, AI feature used), session information, app version, device model, OS version, language, approximate region (country/city derived from IP address, the IP address itself is not stored), and a random app-instance identifier</td>
+    <td>Understanding how the App is used, finding problems and improving features. Never contains your resume or letter content, name, email or phone number. You can turn this off at any time (see section 4).</td>
+    <td>Google (Firebase Analytics)</td>
+  </tr>
+  <tr>
     <td><strong>Resume / letter text you send to AI</strong> (only with your permission, see section 3)</td>
     <td>Generating the text you asked for.</td>
     <td>Passed through Supabase to Anthropic; not stored by us</td>
@@ -118,11 +123,21 @@
   <li><strong>RevenueCat, Inc.:</strong> validates purchases and manages subscription status using the anonymous user ID. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
   <li><strong>Supabase, Inc.:</strong> hosts our database (anonymous user ID, technical and subscription information, AI usage records) and the server function that connects to the AI service. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></li>
   <li><strong>Anthropic PBC:</strong> provides the Claude AI model used for cloud AI writing features, only with your permission (see section 3). <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic Privacy Policy</a></li>
+  <li><strong>Google LLC (Firebase Analytics):</strong> collects the anonymous usage statistics described in section 2. <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses data from apps</a></li>
 </ul>
+
+<h3>Anonymous usage statistics (Firebase Analytics)</h3>
+<p>We use Firebase Analytics only to count and understand app events. We have configured it so that:</p>
+<ul>
+  <li>the advertising identifier (IDFA) is <strong>not</strong> collected, and the App does not request App Tracking Transparency permission because it does not track you;</li>
+  <li>ad storage, ad user data and ad personalization are <strong>disabled</strong>, and the data is not linked to Google advertising services;</li>
+  <li>the anonymous user ID used for subscriptions is <strong>not</strong> sent to Firebase, and no resume or letter content is ever included in events.</li>
+</ul>
+<p><strong>How to opt out:</strong> turn off <strong>Settings → "Share anonymous usage data"</strong> in the App. After you turn it off, no usage statistics are sent.</p>
 
 <p>These providers process data only on our behalf and for the purposes described in this policy. Each of them is bound by its own privacy and security commitments, which provide the same or equal protection of user data as described in this Privacy Policy and as required by Apple's App Store Review Guidelines.</p>
 
-<p><strong>CVisto does not use advertising SDKs, advertising networks, third-party analytics or tracking tools, and does not track you across apps and websites owned by other companies.</strong> We never sell or rent your personal data, and we do not use it for advertising, marketing profiles or data brokering.</p>
+<p><strong>CVisto does not use advertising SDKs or advertising networks, and does not track you across apps and websites owned by other companies.</strong> Apart from the anonymous Firebase Analytics statistics described above, the App contains no other analytics or tracking tools. We never sell or rent your personal data, and we do not use it for advertising, marketing profiles or data brokering.</p>
 
 
 <h2>5. International Data Transfers</h2>
@@ -130,7 +145,7 @@
 <p>Data handled by our service providers may be processed on servers located outside your country:</p>
 <ul>
   <li><strong>Supabase:</strong> our database and server function are hosted in the <strong>Asia-Pacific (Sydney, Australia)</strong> region (ap-southeast-2).</li>
-  <li><strong>Anthropic</strong> and <strong>RevenueCat</strong> process data primarily in the <strong>United States</strong>.</li>
+  <li><strong>Anthropic</strong>, <strong>RevenueCat</strong> and <strong>Google (Firebase Analytics)</strong> process data primarily in the <strong>United States</strong>.</li>
   <li><strong>Apple</strong> processes payments under its own policies and infrastructure.</li>
 </ul>
 <p>Where required by law (for example under the GDPR or KVKK), these transfers rely on appropriate safeguards such as the providers' standard contractual clauses and data processing agreements.</p>
@@ -142,7 +157,7 @@
 <ul>
   <li><strong>Performance of a contract:</strong> providing the App, validating subscriptions and counting AI credits.</li>
   <li><strong>Consent:</strong> sending your resume text to the third-party AI service. You can withdraw consent at any time as described in section 3.</li>
-  <li><strong>Legitimate interests:</strong> keeping the service secure and reliable and preventing abuse, using only minimal technical data.</li>
+  <li><strong>Legitimate interests:</strong> keeping the service secure and reliable, preventing abuse, and understanding how the App is used through anonymous usage statistics, which you can turn off at any time.</li>
 </ul>
 
 
@@ -151,6 +166,7 @@
 <ul>
   <li><strong>Data on your device</strong> stays until you delete it. You can delete any resume, cover letter or photo inside the App at any time. Deleting the App removes all locally stored data from your device. If your device backups (such as iCloud Backup) are enabled, a copy may also exist in your own backup, which is controlled by you and Apple.</li>
   <li><strong>Resume text sent to AI</strong> is not stored by us. Anthropic retains API data only for the limited period described in its policies.</li>
+  <li><strong>Anonymous usage statistics</strong> are kept by Firebase Analytics for up to 14 months and then deleted automatically. Because they are not linked to you, the easiest way to reset them is to turn off "Share anonymous usage data" or reinstall the App, which creates a new random app-instance identifier.</li>
   <li><strong>Anonymous user ID, technical, subscription and AI usage records</strong> are kept while you use the App and for as long as needed for subscription management, accounting and legal obligations, after which they are deleted or anonymised.</li>
 </ul>
 
